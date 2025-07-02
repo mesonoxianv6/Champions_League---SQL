@@ -1,11 +1,11 @@
-select
+SELECT
 	kos.team_name,
-	count(*) as lost_finals
-from 
+	COUNT(*) AS lost_finals
+FROM 
 	knock_out_stage kos
-where
+WHERE
 	kos.knock_out_stage_status = "loser"
-group by
+GROUP BY
 	kos.team_name
-order by 
+ORDER BY 
 	lost_finals DESC

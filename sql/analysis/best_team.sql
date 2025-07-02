@@ -1,16 +1,16 @@
-select
+SELECT
 	kos.team_name,
-	count(*) as wins,
-	group_concat(s.season_year order by s.season_year separator ', ') as win_years
-from 
+	COUNT(*) AS wins,
+	GROUP_CONCAT(s.season_year ORDER BY s.season_year SEPARATOR ', ') AS win_years
+FROM 
 	knock_out_stage kos
-join
+JOIN
 	seasons s
-on 
+ON 
 	s.season_id = kos.season_id
-where
+WHERE
 	kos.knock_out_stage_status = "winner"
-group by
+GROUP BY
 	kos.team_name
-order by 
+ORDER BY 
 	wins DESC
