@@ -1,6 +1,6 @@
 SELECT 
 	nationality,
-	count(player_id) AS final_players
+	count(distinct player_id) AS final_players
 FROM
 	finalists_view
 GROUP BY
