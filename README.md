@@ -45,13 +45,3 @@ End-to-end analysis of UEFA Champions League (1991–2024) using SQL and Power B
 2. Open `.pbix` in [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
 
 3. Review SQL queries in `/sql/analysis/` (compatible with MySQL)
-
----
-
-## 👤 Author
-
-**Adrian Hachuła**  
-📍 Poland | Aspiring Data Analyst  
-🔗 [LinkedIn](https://www.linkedin.com/in/your-link-here) *(optional)*
-
----
